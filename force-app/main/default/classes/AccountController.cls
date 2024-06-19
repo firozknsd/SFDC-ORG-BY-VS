@@ -11,10 +11,8 @@ public class AccountController {
         if ( sortBy != null && sortDirection != null ) {
             query += ' ORDER BY ' + sortBy + ' ' + sortDirection;
         }
-
-        //Added by Firoz 
-        //My logic 
-        //testing
+        //Here I have created a new variable for testing purpose only 
+        String test = 'val';
         query = query + ' LIMIT 10';
         return Database.query( query );
 
