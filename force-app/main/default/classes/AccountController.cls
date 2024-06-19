@@ -11,6 +11,9 @@ public class AccountController {
         if ( sortBy != null && sortDirection != null ) {
             query += ' ORDER BY ' + sortBy + ' ' + sortDirection;
         }
+
+        //Added by Firoz 
+        //My logic 
         query = query + ' LIMIT 10';
         return Database.query( query );
 
